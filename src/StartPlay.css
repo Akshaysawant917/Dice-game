@@ -1,0 +1,91 @@
+.outer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.upper {
+  padding: 0px 20px;
+  display: flex;
+  margin-top: 5%;
+  width: 90%;
+  height: 15%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+.up p{
+    color: red;
+}
+.upper h3 {
+  font-size: 50px;
+}
+.diceNum {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.up h4{
+    text-align: end;
+}
+.diceNumBox {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+.lower {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  width: 20%;
+  height: 50%;
+}
+.lower img {
+  margin-top: 5px;
+  width: 80%;
+}
+.lower h5 {
+  margin: 10px 0px;
+}
+.lower button {
+  font-size: 20px;
+  width: 70%;
+  height: 50px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+}
+@media (max-width:600px) {
+  .upper{
+  
+    flex-direction: column;
+    height: 40%;
+  }
+  .upper h3{
+    margin-top: 20px;
+  }
+  .diceNum {
+flex-wrap: wrap;
+
+  }
+  .diceNumBox {
+    height: 100px;
+    width: 100px;
+  }
+  .lower{
+    margin-top: 30px;
+    width: 40%;
+  }
+}
